@@ -61,7 +61,7 @@ Route::get('forgot-password', [CustomAuthController::class, 'forgotPassword'])->
 Route::post('forgot-password', [CustomAuthController::class, 'tempPassword'])->name('temp.pass');
 Route::get('new-password/{user}/{tempPassword}', [CustomAuthController::class, 'newPassword'])->name('new.pass');
 
-Route::get('/fichier', [FichierController::class, 'index'])->name('fichier.index')->middleware('auth');;
+Route::get('fichier', [FichierController::class, 'index'])->name('fichier.index')->middleware('auth');;
 Route::get('fichier-add', [FichierController::class, 'create'])->name('fichier.create')->middleware('auth');
 Route::post('fichier-add', [FichierController::class, 'store'])->name('fichier.store')->middleware('auth');
 Route::put('fichier-edit/{fichier}', [FichierController::class, 'update'])->middleware('auth');

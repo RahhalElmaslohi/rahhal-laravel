@@ -76,7 +76,7 @@
 
         <!-- Navigation -->
         <nav id="nav" class="">
-            <ul class="main-menu  navigation">
+            <ul class="  navigation">
                 <li><a href="{{ url('/login') }}">Login</a></li>
                 <li><a href="{{ url('/registration') }}">Registration</a></li>
                 <li><a href="{{ url('/forum') }}">Forum</a></li>
